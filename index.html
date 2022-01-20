@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>vnote</title>
+</head>
+<body>
+    @for i in 0 .. sources.len
+    <div>
+	<p>
+	    ${ecounts[i]}
+	<p>
+	@for line in sources[i]
+	    @line <br>
+	@end
+	</p>
+    </div>
+    @end
+</body>
+</html>
