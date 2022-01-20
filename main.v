@@ -60,7 +60,7 @@ struct IPynb {
 }
 
 fn main() {
-    s := os.read_file('./main.ipynb') or {
+    s := os.read_file('./sample/sample.ipynb') or {
 	eprintln('Failed to open file')
 	return
     }
@@ -69,9 +69,9 @@ fn main() {
 	return
     }
     for cell in ipynb.cells {
-	println('$cell')
+	println('$cell.source')
     }
-    println('$ipynb.metadata')
+    // println('$ipynb.metadata')
     println('')
 }
 
