@@ -42,7 +42,7 @@ struct OutputData {
 struct Output {
     output_type string
     data OutputData
-    metadata Metadata
+    // metadata Metadata
     execution_count int
 }
 
@@ -51,12 +51,12 @@ struct Cell {
     execution_count int
     source []string
     outputs []Output
-    metadata Metadata
+    // metadata Metadata
 }
 
 struct IPynb {
     cells []Cell
-    metadata Metadata
+    // metadata Metadata
     nbformat int
     nbformat_minor int
 }
