@@ -7,8 +7,14 @@
     <div>
 	<p>
 	    ${ecounts[i]}
+	</p>
 	<p>
 	@for line in sources[i]
+	    @line <br>
+	@end
+	</p>
+	<p>
+	@for line in outputs[i]
 	    @line <br>
 	@end
 	</p>
